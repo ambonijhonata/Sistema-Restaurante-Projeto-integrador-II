@@ -30,6 +30,15 @@ function detalharComanda(cliente, mesaNumero) {
                         celulaPreco.textContent = produto.valor;
                     }
 
+                    for (const bebida of despesa.bebidas) {
+                        const linha = tabela.insertRow();
+                        const celulaProduto = linha.insertCell(0);
+                        const celulaPreco = linha.insertCell(1);
+
+                        celulaProduto.textContent = bebida.produto;
+                        celulaPreco.textContent = bebida.valor;
+                    }
+
                     // Insere a tabela no elemento com ID "mesa-despesas-detalhada"
                     const detalhesMesa = document.getElementById('mesa-despesas-detalhada');
                     detalhesMesa.innerHTML = ''; // Limpa qualquer conteúdo existente
