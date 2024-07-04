@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/pedido.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="./pedido.html">Novo Pedido</a></li>
+                <li><a href="./mesa.html">Mesas</a></li>
+                <li><a href="./usuario.html">Usuário</a></li>
+                <li><a href="./comida.html">Itens</a></li>
+                <!--<li><a href="./bebida.html">Bebida</a></li>-->
+                
+                <li><a href="./login.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="conteudo">
+            <h1>Novo Pedido</h1>
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="produtos">Categoria:</label>
+                <select id="produtos" name="produtos" required>
+                    <option value="comida">comida</option>
+                    <option value="bebida">bebida</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="bebidas">Itens:</label>
+                <select id="bebidas" name="bebidas" required></select>
+            </div>
+            <!--<div class="campo">
+                <label for="combos">Combo:</label>
+                <select id="combos" name="combos"></select>
+            </div>
+            -->
+            <div class="campo">
+                <label for="mesa">Mesa:</label>
+                <input type="number" id="mesa" name="mesa" required>
+            </div>
+            <div class="campo">
+                <label for="comentarios">Comentários Adicionais:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+            <table id="gridProdutos">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+            <div class="botoes">
+                <button type="button" class="botaoAuxiliar" id="botaoAdicionar">Adicionar</button>
+                <button type="button" class="botaoAuxiliar" id="botaoRemover">Remover</button>
+            </div>
+            <button type="button" class="botao" id="botao">Confirmar</button>
+        </div>
+    </div>
+    <script src="../js/pedido.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Mesas</title>
+    <link rel="stylesheet" href="../css/mesa.css">    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="./pedido.html">Novo Pedido</a></li>
+                <li><a href="./mesa.html">Mesas</a></li>
+                <li><a href="./usuario.html">Usuário</a></li>
+                <li><a href="./comida.html">Itens</a></li>
+                <!--<li><a href="./bebida.html">Bebida</a></li>-->
+                
+                <li><a href="./login.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="conteudo">
+
+         
+            <h1>Selecionar Mesas</h1>
+            <div class="mesas">
+                <div class="mesa" data-mesa="1" data-despesas="0">Mesa 1</div>
+                <div class="mesa" data-mesa="2" data-despesas="0">Mesa 2</div>
+                <div class="mesa" data-mesa="3" data-despesas="0">Mesa 3</div>
+                <div class="mesa" data-mesa="4" data-despesas="0">Mesa 4</div>
+                <div class="mesa" data-mesa="5" data-despesas="0">Mesa 5</div>
+                <div class="mesa" data-mesa="6" data-despesas="0">Mesa 6</div>
+                <div class="mesa" data-mesa="7" data-despesas="0">Mesa 7</div>
+                <div class="mesa" data-mesa="8" data-despesas="0">Mesa 8</div>
+                <div class="mesa" data-mesa="9" data-despesas="0">Mesa 9</div>
+                <div class="mesa" data-mesa="10" data-despesas="0">Mesa 10</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Despesas da Mesa <span id="mesa-numero"></span></h2>
+            <p><span id="mesa-despesas"></span></p>
+            <button onclick="pagar()">Pagar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-detalhes">
+        <div class="modal-content">
+            <span id="cliente"></span>
+            <p><span id="mesa-despesas-detalhada"></span></p>
+            <button onclick="fecharModalDetalhes()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="../js/mesa.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+dentro da pasta backend
+
+--deve ter node
+--caso seja a primeira vez
+npm init
+npm install express
+npm install mongoose
+npm install nodemmon 
+npm start
+
+--nisso ira rodar o servidor 

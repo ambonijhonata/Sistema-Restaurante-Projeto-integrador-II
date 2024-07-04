@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebida</title>
+    <link rel="stylesheet" href="../css/usuario.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="./pedido.html">Novo Pedido</a></li>
+                <li><a href="./mesa.html">Mesas</a></li>
+                <li><a href="./usuario.html">Usuário</a></li>
+                <li><a href="./comida.html">Itens</a></li>
+                <!--<li><a href="./bebida.html">Bebida</a></li>-->
+                
+                <li><a href="./login.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="conteudo">
+            <h1>Adicionar usuario</h1>
+            
+                <div class="campo">
+                    <label for="produto">Login:</label>
+                    <input type="text" id="nome" name="produto" required>
+                </div>
+                <div class="campo">
+                    <label for="valor">Senha:</label>
+                    <input type="text" id="valor" name="valor" required>
+                </div>
+                
+                <div class="div-botao">
+                    <button type="button" class="botao" id="insert">Enviar</button>
+                    <button type="button" class="botao" id="update">Atualizar</button>
+                    <button type="button" class="botao" id="delete">Deletar</button>
+                </div>
+            
+            <div id="info">
+                
+            </div>
+    </div>
+
+    <script src="../js/usuario.js"></script>
+</body>
+</html>
